@@ -18,13 +18,13 @@ for i=1:length(w)
     disp(iterations(i))
     x_new = sor(A,B,w(i),x0,tol,maxit);
     error(i) = norm(x-x_new,inf)/norm(x,inf);
-   
+    
     x_new = sor(A,B,1.31,x0,tol,iterations(i));
     errorIte(i) = norm(x-x_new,inf)/norm(x,inf);
     % for j = 1:length(iterations)
-   %     x_new = sor(A,B,w(i),x0,tol,iterations(i));
-   %     errorIte(i) = norm(x-x_new,inf)/norm(x,inf);
-   % end
+    %     x_new = sor(A,B,w(i),x0,tol,iterations(i));
+    %     errorIte(i) = norm(x-x_new,inf)/norm(x,inf);
+    % end
 end
 plot(w,error)
 [c,i] = min(error);

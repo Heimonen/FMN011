@@ -19,6 +19,8 @@ semilogx(kap, rri)
 figure('Name', 'RRI vs RRG')
 loglog(kap, rrg, kap, rri)
 figure('Name', 'REG vs REI')
+xlabel('REG')
+ylabel('REI')
 plot(kap,reg, kap, rei)
 end
 

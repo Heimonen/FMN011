@@ -1,4 +1,4 @@
-function [ x ] = gauss( A,B )
+function [ x, U, L ] = gauss( A,B )
 %We suppose that gaussian elimination can be performed on the system Ax = L
 %without row interchanges.
 %   Detailed explanation goes here
@@ -22,5 +22,6 @@ x=U\c;%pg 87
 disp('Time taken:')
 disp(toc)
 disp('seconds.')
+
 end
 
