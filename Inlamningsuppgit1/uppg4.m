@@ -1,11 +1,9 @@
 function [ ] = uppg4( )
-%UPPG4 Plots a graph showing the mean computation time for Gaussian 
+%UPPG4 Plots a graph showing the mean computation time for Gaussian
 % elimination and invert-by-multiply for systems with condition number
 %   10, 60, 110, 160,...,1010
 
 size = 10;
-timesGauss = ones(20,1);
-timesInv = ones(20,1);
 conditionNumbers = ones(20,1);
 n = 10;
 timesGauss = ones(n, 20);
@@ -22,7 +20,7 @@ for i=1:20
         timesGauss(j,i) = toc;
         tic;
         inv(A)*b;
-        timesInv(j,i) = toc;   
+        timesInv(j,i) = toc;
     end
     size = size + 50;
 end

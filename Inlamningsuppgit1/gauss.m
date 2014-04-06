@@ -1,8 +1,15 @@
 function [ x, U, L ] = gauss( A,B )
-%We suppose that gaussian elimination can be performed on the system Ax = L
-%without row interchanges.
-%   Detailed explanation goes here
-% Construct the lower triangular matrix L
+%GAUSS Solves Ax = b using LU factorization and the backslash operator for the
+% resulting triangular systems L and U. Measures the time taken to solve
+% the system.
+% input: 
+%   A: Matrix A in Ax = b
+%   B: vector b in Ax = B
+% output: 
+%   x: the solution
+%   L: lower triangular matrix
+%   U: upper triangular matrix
+
 tic;
 n = length(A);
 U = A;
@@ -19,9 +26,7 @@ for i=1:n-1
 end
 c=L\B;
 x=U\c;%pg 87
-disp('Time taken:')
+disp('Gauss time:')
 disp(toc)
-disp('seconds.')
-
 end
 
