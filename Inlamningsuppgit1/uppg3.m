@@ -1,8 +1,8 @@
 function [ ] = uppg3( )
-%UPPG3 Summary of this function goes here
-%   Detailed explanation goes here gauss errors are small and is nicer
+%UPPG3 Runs invmult for 500 by 500 matrices with condition numbers
+%   1, 1e3, 1e6, 1e9, 1e12, 1e15
+% and plots errors vs condition numbers and residuals vs condition numbers.
 
-% n = 500
 [kap, reg, rrg, rei, rri] = invmult(500,[1, 1e3, 1e6, 1e9, 1e12, 1e15])
 
 % RRI vs RRG
