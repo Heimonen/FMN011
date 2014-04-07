@@ -9,7 +9,7 @@ function [ time ] = backslash( A,B )
 tic
 x=A\B;
 time = toc;
-disp('Backslash time:')
-disp(time)
+%disp('Backslash time:')
+%disp(time)
 end
 

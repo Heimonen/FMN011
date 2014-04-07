@@ -23,6 +23,6 @@ for i = 1 : maxit
     x_new = lhs \ rhs;
 end
 time = toc;
-disp('SOR time:')
-disp(time)
+%disp('SOR time:')
+%disp(time)
 end

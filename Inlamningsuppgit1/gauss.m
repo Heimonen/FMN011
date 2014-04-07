@@ -26,8 +26,8 @@ for i=1:n-1
 end
 c=L\B;
 x=U\c;%pg 87
-disp('Gauss time:')
+%disp('Gauss time:')
 time = toc;
-disp(time)
+%disp(time)
 end
 
