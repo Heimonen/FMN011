@@ -1,4 +1,4 @@
-function [ x ] = backslash( A,B )
+function [ time ] = backslash( A,B )
 %BACKSLASH Solves Ax = b and shows the time taken for A and B
 % input: 
 %   A: Matrix A in Ax = b

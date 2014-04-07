@@ -1,4 +1,4 @@
-function [ x, U, L ] = gauss( A,B )
+function [ time ] = gauss( A,B )
 %GAUSS Solves Ax = b using LU factorization and the backslash operator for the
 % resulting triangular systems L and U. Measures the time taken to solve
 % the system.
@@ -27,6 +27,7 @@ end
 c=L\B;
 x=U\c;%pg 87
 disp('Gauss time:')
-disp(toc)
+time = toc;
+disp(time)
 end
 

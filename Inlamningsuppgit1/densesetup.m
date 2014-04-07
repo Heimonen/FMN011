@@ -8,7 +8,7 @@ function [ A, B ] = densesetup( n )
 %   B: as in Ax = B
 %   condA: The condition number
 
-while true
+%while true
     A = rand(n);
     for i=1:n
         for j=1:n
@@ -17,9 +17,9 @@ while true
             end
         end
     end
-    if cond(A) < 1.6
-        break;
-    end
-end
+  %  if cond(A) < 1.6
+ %       break;
+ %   end
+%end
 B = rand(n,1);
 end

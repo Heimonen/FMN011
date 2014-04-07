@@ -1,4 +1,4 @@
-function x_new = sor(A,B,w,x0,tol,maxit)
+function time = sor(A,B,w,x0,tol,maxit)
 %SOR Successive Over-Relaxation
 % input:
 %   A: Matrix A in Ax = b
