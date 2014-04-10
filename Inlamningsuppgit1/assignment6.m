@@ -1,4 +1,4 @@
-function [ ] = createdominantmatrix( n )
+function [ ] = assignment6( n )
 %ASSIGNMENT6 Runs the functions backslash, gauss, and sor and prints the
 % times taken to run the respective functions. The calculations are done on
 % a 50 by 50 strictly diagonally dominant dense matrix.

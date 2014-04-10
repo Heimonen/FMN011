@@ -16,7 +16,7 @@ set(hleg1,'Location','NorthWest')
 
 % REG vs REI
 figure('Name', 'REG vs REI')
-plot(kap,reg, kap, rei)
+loglog(kap,reg, kap, rei)
 title('Relative error vs condition number for 500 by 500 matrices')
 xlabel('Condition number')
 ylabel('Error')
